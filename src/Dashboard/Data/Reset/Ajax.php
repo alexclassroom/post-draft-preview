@@ -23,15 +23,15 @@ class Ajax extends AbstractAjax
         $meta = new Meta();
 
         if ($meta->getMetaCount('pdp_hash') < 1) {
-            $responseData['message'] = __('Reset cannot be performed cause no hash generated yet.', 'pdp');
+            $responseData['message'] = __('Reset cannot be performed cause no hash generated yet.', 'post-draft-preview');
             wp_send_json_error($responseData);
         }
 
         if ($meta->resetAllHashes()) {
-            $responseData['message'] = __('Reset was successful.', 'pdp');
+            $responseData['message'] = __('Reset was successful.', 'post-draft-preview');
             wp_send_json_success($responseData);
         } else {
-            $responseData['message'] = __('Reset failed.', 'pdp');
+            $responseData['message'] = __('Reset failed.', 'post-draft-preview');
             wp_send_json_error($responseData);
         }
     }

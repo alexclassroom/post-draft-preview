@@ -23,10 +23,10 @@ class Ajax extends AbstractAjax
         $meta = new Meta();
 
         if ($meta->removeAllData()) {
-            $responseData['message'] = __('All data has been removed.', 'pdp');
+            $responseData['message'] = __('All data has been removed.', 'post-draft-preview');
             wp_send_json_success($responseData);
         } else {
-            $responseData['message'] = __('An error occured.', 'pdp');
+            $responseData['message'] = __('An error occured.', 'post-draft-preview');
             wp_send_json_error($responseData);
         }
     }

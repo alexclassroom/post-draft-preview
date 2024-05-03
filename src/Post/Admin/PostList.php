@@ -23,7 +23,7 @@ class PostList
         }
 
         if (in_array(get_post_status($post), array('draft', 'pending', 'auto-draft'))) {
-            $actions[] = '<a href="' . $this->post->getDraft()->getPublicDraftPreviewUrl($post) . '" target="_blank">' . __('Public draft preview', 'pdp') . '</a>';
+            $actions[] = '<a href="' . $this->post->getDraft()->getPublicDraftPreviewUrl($post) . '" target="_blank">' . __('Public draft preview', 'post-draft-preview') . '</a>';
         }
 
         return $actions;

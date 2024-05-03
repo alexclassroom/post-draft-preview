@@ -22,15 +22,15 @@ class AjaxGetStatus extends AbstractAjax
         $this->validate();
 
         if (! isset($_POST['id']) || ! $_POST['id']) {
-            wp_send_json_error(['message' => __('Incomplete data.', 'pdp')]);
+            wp_send_json_error(['message' => __('Incomplete data.', 'post-draft-preview')]);
         }
 
         if (! is_numeric($_POST['id'])) {
-            wp_send_json_error(['message' => __('Invalid post ID.', 'pdp')]);
+            wp_send_json_error(['message' => __('Invalid post ID.', 'post-draft-preview')]);
         }
 
         if (! $post = get_post($_POST['id'])) {
-            wp_send_json_error(['message' => __('Post doesn\'t exist.', 'pdp')]);
+            wp_send_json_error(['message' => __('Post doesn\'t exist.', 'post-draft-preview')]);
         }
 
         $meta = new Meta();

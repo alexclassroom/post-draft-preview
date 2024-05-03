@@ -24,7 +24,7 @@ class Ajax extends AbstractAjax
 
         $this->saveAutogenerationSettings($meta);
 
-        $responseData['message'] = __('Autogeneration settings saved successfully.', 'pdp');
+        $responseData['message'] = __('Autogeneration settings saved successfully.', 'post-draft-preview');
 
         wp_send_json_success($responseData);
     }

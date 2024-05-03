@@ -44,7 +44,7 @@ class Config
     public function settingsLink(array $links): array
     {
         $url = admin_url('tools.php?page=pdp-dashboard');
-        $settings_link = '<a href="'.$url.'">'. __('Settings', 'pdp') .'</a>';
+        $settings_link = '<a href="'.$url.'">'. __('Settings', 'post-draft-preview') .'</a>';
         array_unshift($links, $settings_link);
 
         return $links;

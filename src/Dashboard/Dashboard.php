@@ -24,7 +24,7 @@ class Dashboard
      */
     public function setupMenu(): void
     {
-        add_submenu_page('tools.php', __('Post Draft Preview', 'pdp'), __('Post Draft Preview', 'pdp'), 'manage_options', 'pdp-dashboard', [$this, 'dashboardInit']);
+        add_submenu_page('tools.php', __('Post Draft Preview', 'post-draft-preview'), __('Post Draft Preview', 'post-draft-preview'), 'manage_options', 'pdp-dashboard', [$this, 'dashboardInit']);
     }
 
     public function dashboardInit(): void

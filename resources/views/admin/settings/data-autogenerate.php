@@ -1,10 +1,10 @@
 <div class="card">
     <h2 class="title">
-        <?php echo esc_html(__('Enable auto-generating preview links', 'pdp')); ?>
+        <?php echo esc_html(__('Enable auto-generating preview links', 'post-draft-preview')); ?>
     </h2>
 
     <p>
-        <?php echo esc_html(__('Do you want to generate the post draft preview automatically after the post is created?', 'pdp')); ?>
+        <?php echo esc_html(__('Do you want to generate the post draft preview automatically after the post is created?', 'post-draft-preview')); ?>
     </p>
 
     <form method="post">
@@ -20,6 +20,6 @@
             <?php endforeach; ?>
         </ul>
 
-        <input type="submit" class="button button--data-autogenerate button-secondary" value="Confirm">
+        <input type="submit" class="button button--data-autogenerate button-secondary" value="<?php esc_attr_e( 'Confirm', 'post-draft-preview' ); ?>">
     </form>
 </div>

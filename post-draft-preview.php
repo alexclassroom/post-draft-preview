@@ -7,7 +7,7 @@
  * Version: 1.2.2
  * Author: wpserved
  * Author URI: https://wpserved.com/
- * Text Domain: pdp
+ * Text Domain: post-draft-preview
  * Domain Path: /resources/lang
  * Requires at least: 5.5
  * Requires PHP: 7.4
